@@ -1,0 +1,12 @@
+D:\C#Asp.net\PruevaRevisionVehiculosTransporte\ReviVehTransp.App.Dominio\bin\Debug\net6.0\ReviVehTransp.App.Dominio.deps.json
+D:\C#Asp.net\PruevaRevisionVehiculosTransporte\ReviVehTransp.App.Dominio\bin\Debug\net6.0\ReviVehTransp.App.Dominio.dll
+D:\C#Asp.net\PruevaRevisionVehiculosTransporte\ReviVehTransp.App.Dominio\bin\Debug\net6.0\ReviVehTransp.App.Dominio.pdb
+D:\C#Asp.net\PruevaRevisionVehiculosTransporte\ReviVehTransp.App.Dominio\obj\Debug\net6.0\ReviVehTransp.App.Dominio.csproj.AssemblyReference.cache
+D:\C#Asp.net\PruevaRevisionVehiculosTransporte\ReviVehTransp.App.Dominio\obj\Debug\net6.0\ReviVehTransp.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#Asp.net\PruevaRevisionVehiculosTransporte\ReviVehTransp.App.Dominio\obj\Debug\net6.0\ReviVehTransp.App.Dominio.AssemblyInfoInputs.cache
+D:\C#Asp.net\PruevaRevisionVehiculosTransporte\ReviVehTransp.App.Dominio\obj\Debug\net6.0\ReviVehTransp.App.Dominio.AssemblyInfo.cs
+D:\C#Asp.net\PruevaRevisionVehiculosTransporte\ReviVehTransp.App.Dominio\obj\Debug\net6.0\ReviVehTransp.App.Dominio.csproj.CoreCompileInputs.cache
+D:\C#Asp.net\PruevaRevisionVehiculosTransporte\ReviVehTransp.App.Dominio\obj\Debug\net6.0\ReviVehTransp.App.Dominio.dll
+D:\C#Asp.net\PruevaRevisionVehiculosTransporte\ReviVehTransp.App.Dominio\obj\Debug\net6.0\refint\ReviVehTransp.App.Dominio.dll
+D:\C#Asp.net\PruevaRevisionVehiculosTransporte\ReviVehTransp.App.Dominio\obj\Debug\net6.0\ReviVehTransp.App.Dominio.pdb
+D:\C#Asp.net\PruevaRevisionVehiculosTransporte\ReviVehTransp.App.Dominio\obj\Debug\net6.0\ref\ReviVehTransp.App.Dominio.dll

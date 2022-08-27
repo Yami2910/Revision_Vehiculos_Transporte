@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ReviVehTransp.App.Dominio/1.0.0": {
+        "runtime": {
+          "ReviVehTransp.App.Dominio.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ReviVehTransp.App.Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

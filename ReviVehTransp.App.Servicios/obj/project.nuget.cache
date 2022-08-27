@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "dXV/XjS6bdXFAPMRirdO/k7/krMxdwbshptbRwhfS/YSG2b4QTK46aj61WTeBDKGrkpPPiYXwUaBaw/dG1tNeg==",
+  "success": true,
+  "projectFilePath": "D:\\C#Asp.net\\PruevaRevisionVehiculosTransporte\\ReviVehTransp.App.Servicios\\ReviVehTransp.App.Servicios.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ewin8\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\ewin8\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\ewin8\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\ewin8\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\ewin8\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\ewin8\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

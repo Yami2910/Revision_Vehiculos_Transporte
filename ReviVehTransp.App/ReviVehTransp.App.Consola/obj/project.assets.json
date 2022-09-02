@@ -2016,11 +2016,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C#Asp.net\\PruevaRevisionVehiculosTransporte\\ReviVehTransp.App.Consola\\ReviVehTransp.App.Consola.csproj",
+      "projectUniqueName": "D:\\C#Asp.net\\RevisionVehiculosTransporte\\ReviVehTransp.App\\ReviVehTransp.App.Consola\\ReviVehTransp.App.Consola.csproj",
       "projectName": "ReviVehTransp.App.Consola",
-      "projectPath": "D:\\C#Asp.net\\PruevaRevisionVehiculosTransporte\\ReviVehTransp.App.Consola\\ReviVehTransp.App.Consola.csproj",
+      "projectPath": "D:\\C#Asp.net\\RevisionVehiculosTransporte\\ReviVehTransp.App\\ReviVehTransp.App.Consola\\ReviVehTransp.App.Consola.csproj",
       "packagesPath": "C:\\Users\\ewin8\\.nuget\\packages\\",
-      "outputPath": "D:\\C#Asp.net\\PruevaRevisionVehiculosTransporte\\ReviVehTransp.App.Consola\\obj\\",
+      "outputPath": "D:\\C#Asp.net\\RevisionVehiculosTransporte\\ReviVehTransp.App\\ReviVehTransp.App.Consola\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ewin8\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -2035,11 +2035,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\C#Asp.net\\PruevaRevisionVehiculosTransporte\\ReviVehTransp.App.Dominio\\ReviVehTransp.App.Dominio.csproj": {
-              "projectPath": "D:\\C#Asp.net\\PruevaRevisionVehiculosTransporte\\ReviVehTransp.App.Dominio\\ReviVehTransp.App.Dominio.csproj"
+            "D:\\C#Asp.net\\RevisionVehiculosTransporte\\ReviVehTransp.App\\ReviVehTransp.App.Dominio\\ReviVehTransp.App.Dominio.csproj": {
+              "projectPath": "D:\\C#Asp.net\\RevisionVehiculosTransporte\\ReviVehTransp.App\\ReviVehTransp.App.Dominio\\ReviVehTransp.App.Dominio.csproj"
             },
-            "D:\\C#Asp.net\\PruevaRevisionVehiculosTransporte\\ReviVehTransp.App.Persistencia\\ReviVehTransp.App.Persistencia.csproj": {
-              "projectPath": "D:\\C#Asp.net\\PruevaRevisionVehiculosTransporte\\ReviVehTransp.App.Persistencia\\ReviVehTransp.App.Persistencia.csproj"
+            "D:\\C#Asp.net\\RevisionVehiculosTransporte\\ReviVehTransp.App\\ReviVehTransp.App.Persistencia\\ReviVehTransp.App.Persistencia.csproj": {
+              "projectPath": "D:\\C#Asp.net\\RevisionVehiculosTransporte\\ReviVehTransp.App\\ReviVehTransp.App.Persistencia\\ReviVehTransp.App.Persistencia.csproj"
             }
           }
         }

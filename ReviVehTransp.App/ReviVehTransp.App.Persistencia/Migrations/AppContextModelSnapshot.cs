@@ -22,27 +22,37 @@ namespace ReviVehTransp.App.Persistencia.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("ReviVehTransp.App.Dominio.MecanicoVehiculo", b =>
+            modelBuilder.Entity("ReviVehTransp.App.Dominio.ConductorVehiculo", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
+                    b.Property<int>("VehiculoId")
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    b.Property<int>("ConductorId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("FechaAsignacion")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("VehiculoId", "ConductorId");
+
+                    b.HasIndex("ConductorId");
+
+                    b.ToTable("ConductorVehiculos");
+                });
+
+            modelBuilder.Entity("ReviVehTransp.App.Dominio.MecanicoVehiculo", b =>
+                {
+                    b.Property<int>("VehiculoId")
+                        .HasColumnType("int");
 
                     b.Property<int>("MecanicoId")
                         .HasColumnType("int");
 
-                    b.Property<int>("VehiculoId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
+                    b.HasKey("VehiculoId", "MecanicoId");
 
                     b.HasIndex("MecanicoId");
 
-                    b.HasIndex("VehiculoId");
-
-                    b.ToTable("MecanicoVehiculo");
+                    b.ToTable("MecanicoVehiculos");
                 });
 
             modelBuilder.Entity("ReviVehTransp.App.Dominio.Persona", b =>
@@ -76,18 +86,40 @@ namespace ReviVehTransp.App.Persistencia.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("NumeroDocumento")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<string>("Telefono")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Id")
+                    b.HasIndex("NumeroDocumento")
                         .IsUnique();
 
                     b.ToTable("Personas");
 
                     b.HasDiscriminator<string>("Discriminator").HasValue("Persona");
+                });
+
+            modelBuilder.Entity("ReviVehTransp.App.Dominio.PropietarioVehiculo", b =>
+                {
+                    b.Property<int>("IdVehiculo")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdDuenhoVehiculo")
+                        .HasColumnType("int");
+
+                    b.HasKey("IdVehiculo", "IdDuenhoVehiculo");
+
+                    b.HasIndex("IdDuenhoVehiculo");
+
+                    b.HasIndex("IdVehiculo")
+                        .IsUnique();
+
+                    b.ToTable("PropietarioVehiculos");
                 });
 
             modelBuilder.Entity("ReviVehTransp.App.Dominio.Vehiculo", b =>
@@ -109,9 +141,6 @@ namespace ReviVehTransp.App.Persistencia.Migrations
                     b.Property<string>("DescripcionGeneral")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("DuenhoVehiculoId")
-                        .HasColumnType("int");
 
                     b.Property<string>("Marca")
                         .IsRequired()
@@ -139,19 +168,12 @@ namespace ReviVehTransp.App.Persistencia.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("DuenhoVehiculoId");
-
                     b.ToTable("Vehiculos");
                 });
 
             modelBuilder.Entity("ReviVehTransp.App.Dominio.Auxiliar", b =>
                 {
                     b.HasBaseType("ReviVehTransp.App.Dominio.Persona");
-
-                    b.Property<string>("NumeroDocumento")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("Auxiliar_NumeroDocumento");
 
                     b.Property<int>("Rol")
                         .HasColumnType("int");
@@ -163,11 +185,6 @@ namespace ReviVehTransp.App.Persistencia.Migrations
                 {
                     b.HasBaseType("ReviVehTransp.App.Dominio.Persona");
 
-                    b.Property<string>("NumeroDocumento")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)")
-                        .HasColumnName("Conductor_NumeroDocumento");
-
                     b.Property<string>("NumeroTelefono")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -175,10 +192,6 @@ namespace ReviVehTransp.App.Persistencia.Migrations
                     b.Property<string>("TipoLicencia")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.HasIndex("NumeroDocumento")
-                        .IsUnique()
-                        .HasFilter("[Conductor_NumeroDocumento] IS NOT NULL");
 
                     b.HasDiscriminator().HasValue("Conductor");
                 });
@@ -191,14 +204,8 @@ namespace ReviVehTransp.App.Persistencia.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NumeroDocumento")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)")
-                        .HasColumnName("DuenhoVehiculo_NumeroDocumento");
-
-                    b.HasIndex("NumeroDocumento")
-                        .IsUnique()
-                        .HasFilter("[DuenhoVehiculo_NumeroDocumento] IS NOT NULL");
+                    b.Property<DateTime>("FechaComprador")
+                        .HasColumnType("datetime2");
 
                     b.HasDiscriminator().HasValue("DuenhoVehiculo");
                 });
@@ -211,29 +218,36 @@ namespace ReviVehTransp.App.Persistencia.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NumeroDocumento")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasIndex("NumeroDocumento")
-                        .IsUnique()
-                        .HasFilter("[NumeroDocumento] IS NOT NULL");
-
                     b.HasDiscriminator().HasValue("Mecanico");
+                });
+
+            modelBuilder.Entity("ReviVehTransp.App.Dominio.ConductorVehiculo", b =>
+                {
+                    b.HasOne("ReviVehTransp.App.Dominio.Conductor", "Conductor")
+                        .WithMany("ConductorVehiculos")
+                        .HasForeignKey("ConductorId")
+                        .IsRequired();
+
+                    b.HasOne("ReviVehTransp.App.Dominio.Vehiculo", "Vehiculo")
+                        .WithMany("ConductorVehiculos")
+                        .HasForeignKey("VehiculoId")
+                        .IsRequired();
+
+                    b.Navigation("Conductor");
+
+                    b.Navigation("Vehiculo");
                 });
 
             modelBuilder.Entity("ReviVehTransp.App.Dominio.MecanicoVehiculo", b =>
                 {
-                    b.HasOne("ReviVehTransp.App.Dominio.Persona", "Mecanico")
-                        .WithMany()
+                    b.HasOne("ReviVehTransp.App.Dominio.Mecanico", "Mecanico")
+                        .WithMany("MecanicoVehiculos")
                         .HasForeignKey("MecanicoId")
-                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("ReviVehTransp.App.Dominio.Vehiculo", "Vehiculo")
-                        .WithMany()
+                        .WithMany("MecanicoVehiculos")
                         .HasForeignKey("VehiculoId")
-                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Mecanico");
@@ -241,15 +255,46 @@ namespace ReviVehTransp.App.Persistencia.Migrations
                     b.Navigation("Vehiculo");
                 });
 
-            modelBuilder.Entity("ReviVehTransp.App.Dominio.Vehiculo", b =>
+            modelBuilder.Entity("ReviVehTransp.App.Dominio.PropietarioVehiculo", b =>
                 {
-                    b.HasOne("ReviVehTransp.App.Dominio.Persona", "DuenhoVehiculo")
-                        .WithMany()
-                        .HasForeignKey("DuenhoVehiculoId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                    b.HasOne("ReviVehTransp.App.Dominio.DuenhoVehiculo", "DuenhoVehiculo")
+                        .WithMany("PropietarioVehiculos")
+                        .HasForeignKey("IdDuenhoVehiculo")
+                        .IsRequired();
+
+                    b.HasOne("ReviVehTransp.App.Dominio.Vehiculo", "Vehiculo")
+                        .WithOne("PropietarioVehiculo")
+                        .HasForeignKey("ReviVehTransp.App.Dominio.PropietarioVehiculo", "IdVehiculo")
                         .IsRequired();
 
                     b.Navigation("DuenhoVehiculo");
+
+                    b.Navigation("Vehiculo");
+                });
+
+            modelBuilder.Entity("ReviVehTransp.App.Dominio.Vehiculo", b =>
+                {
+                    b.Navigation("ConductorVehiculos");
+
+                    b.Navigation("MecanicoVehiculos");
+
+                    b.Navigation("PropietarioVehiculo")
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ReviVehTransp.App.Dominio.Conductor", b =>
+                {
+                    b.Navigation("ConductorVehiculos");
+                });
+
+            modelBuilder.Entity("ReviVehTransp.App.Dominio.DuenhoVehiculo", b =>
+                {
+                    b.Navigation("PropietarioVehiculos");
+                });
+
+            modelBuilder.Entity("ReviVehTransp.App.Dominio.Mecanico", b =>
+                {
+                    b.Navigation("MecanicoVehiculos");
                 });
 #pragma warning restore 612, 618
         }

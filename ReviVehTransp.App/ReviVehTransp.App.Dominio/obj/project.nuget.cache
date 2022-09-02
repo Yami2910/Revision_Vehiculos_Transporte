@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oVQwT/PX2KXD3sU45rmnptxsPGSsYA2WWPgJwrHaIcwA4d2+tU0ePpT86UF3YOt1KGdtpCzlwvh4mmN2+FTOBw==",
+  "dgSpecHash": "GjKI5qqEzRsraxvogtXV9OKR2gKwIGOnAl42f+lkuCzs2Xz11a4FzvmCvP/2PVuOS3qTECpkkeqnW4zk6h4C2Q==",
   "success": true,
-  "projectFilePath": "D:\\C#Asp.net\\PruevaRevisionVehiculosTransporte\\ReviVehTransp.App.Dominio\\ReviVehTransp.App.Dominio.csproj",
+  "projectFilePath": "D:\\C#Asp.net\\RevisionVehiculosTransporte\\ReviVehTransp.App\\ReviVehTransp.App.Dominio\\ReviVehTransp.App.Dominio.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

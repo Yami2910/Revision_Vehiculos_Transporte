@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C#Asp.net\\PruevaRevisionVehiculosTransporte\\ReviVehTransp.App.Dominio\\ReviVehTransp.App.Dominio.csproj",
+      "projectUniqueName": "D:\\C#Asp.net\\RevisionVehiculosTransporte\\ReviVehTransp.App\\ReviVehTransp.App.Dominio\\ReviVehTransp.App.Dominio.csproj",
       "projectName": "ReviVehTransp.App.Dominio",
-      "projectPath": "D:\\C#Asp.net\\PruevaRevisionVehiculosTransporte\\ReviVehTransp.App.Dominio\\ReviVehTransp.App.Dominio.csproj",
+      "projectPath": "D:\\C#Asp.net\\RevisionVehiculosTransporte\\ReviVehTransp.App\\ReviVehTransp.App.Dominio\\ReviVehTransp.App.Dominio.csproj",
       "packagesPath": "C:\\Users\\ewin8\\.nuget\\packages\\",
-      "outputPath": "D:\\C#Asp.net\\PruevaRevisionVehiculosTransporte\\ReviVehTransp.App.Dominio\\obj\\",
+      "outputPath": "D:\\C#Asp.net\\RevisionVehiculosTransporte\\ReviVehTransp.App\\ReviVehTransp.App.Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ewin8\\AppData\\Roaming\\NuGet\\NuGet.Config"

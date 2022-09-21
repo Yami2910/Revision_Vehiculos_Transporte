@@ -1,0 +1,95 @@
+﻿@model IEnumerable<Revision_Vehiculos_Transporte_MVC.Models.Vehiculo>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Placa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tipo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Marca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Modelo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CapacidadPasajeros)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CilindrajeMotor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PaisOrigen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DescripcionGeneral)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OtrasCaracteristicas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdConductorNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdDuenoVehiculoNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Placa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tipo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Marca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Modelo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CapacidadPasajeros)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CilindrajeMotor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PaisOrigen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DescripcionGeneral)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OtrasCaracteristicas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdConductorNavigation.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdDuenoVehiculoNavigation.Id)
+            </td>
+            <td>
+                <a asp-action="Edit" class="btn btn-warning" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" class="btn btn-primary" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

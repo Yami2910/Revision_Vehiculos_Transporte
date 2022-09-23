@@ -14,9 +14,9 @@ namespace Revision_Vehiculos_Transporte_MVC.Models
         public string Placa { get; set; } = null!;
         public string Tipo { get; set; } = null!;
         public string Marca { get; set; } = null!;
-        public int? Modelo { get; set; }
-        public int? CapacidadPasajeros { get; set; }
-        public int? CilindrajeMotor { get; set; }
+        public string Modelo { get; set; } = null!;
+        public string CapacidadPasajeros { get; set; } = null!;
+        public string CilindrajeMotor { get; set; } = null!;
         public string PaisOrigen { get; set; } = null!;
         public string DescripcionGeneral { get; set; } = null!;
         public string OtrasCaracteristicas { get; set; } = null!;

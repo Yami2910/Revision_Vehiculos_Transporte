@@ -60,7 +60,7 @@ namespace Revision_Vehiculos_Transporte_MVC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Placa,Tipo,Marca,Modelo,CapacidadPasajeros,CilindrajeMotor,PaisOrigen,DescripcionGeneral,OtrasCaracteristicas,IdDuenoVehiculo,IdConductor")] Vehiculo vehiculo)
         {
-            if (ModelState.IsValid)
+            if (vehiculo!=null)
             {
                 _context.Add(vehiculo);
                 await _context.SaveChangesAsync();
@@ -101,7 +101,7 @@ namespace Revision_Vehiculos_Transporte_MVC.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            if (vehiculo!=null)
             {
                 try
                 {

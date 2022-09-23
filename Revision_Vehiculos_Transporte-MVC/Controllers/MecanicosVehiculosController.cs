@@ -60,7 +60,7 @@ namespace Revision_Vehiculos_Transporte_MVC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,IdMecanico,IdVehiculo")] MecanicoVehiculo mecanicoVehiculo)
         {
-            if (ModelState.IsValid)
+            if (mecanicoVehiculo!=null)
             {
                 _context.Add(mecanicoVehiculo);
                 await _context.SaveChangesAsync();
@@ -101,7 +101,7 @@ namespace Revision_Vehiculos_Transporte_MVC.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            if (mecanicoVehiculo!=null)
             {
                 try
                 {

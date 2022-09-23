@@ -178,12 +178,27 @@ namespace Revision_Vehiculos_Transporte_MVC.Models
             {
                 entity.ToTable("Vehiculo");
 
-                entity.Property(e => e.DescripcionGeneral)
+                entity.Property(e => e.CapacidadPasajeros)
                     .HasMaxLength(30)
                     .IsUnicode(false)
                     .IsFixedLength();
 
+                entity.Property(e => e.CilindrajeMotor)
+                    .HasMaxLength(30)
+                    .IsUnicode(false)
+                    .IsFixedLength();
+
+                entity.Property(e => e.DescripcionGeneral)
+                    .HasMaxLength(50)
+                    .IsUnicode(false)
+                    .IsFixedLength();
+
                 entity.Property(e => e.Marca)
+                    .HasMaxLength(30)
+                    .IsUnicode(false)
+                    .IsFixedLength();
+
+                entity.Property(e => e.Modelo)
                     .HasMaxLength(30)
                     .IsUnicode(false)
                     .IsFixedLength();

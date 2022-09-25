@@ -1,3 +1,7 @@
+body {
+    background: #ffffff;
+}
+
 input:invalid {
     border-color: red;
 }

@@ -4,77 +4,102 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="~/css/styleFormu.css" asp-append-version="true" />
+</head>
 
-<h4>Vehiculo</h4>
+<h1>AGREGAR NUEVO VEHICULO</h1>
+
 <hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Placa" class="control-label"></label>
-                <input asp-for="Placa" class="form-control" />
-                <span asp-validation-for="Placa" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Tipo" class="control-label"></label>
-                <input asp-for="Tipo" class="form-control" />
-                <span asp-validation-for="Tipo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Marca" class="control-label"></label>
-                <input asp-for="Marca" class="form-control" />
-                <span asp-validation-for="Marca" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Modelo" class="control-label"></label>
-                <input asp-for="Modelo" class="form-control" />
-                <span asp-validation-for="Modelo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CapacidadPasajeros" class="control-label"></label>
-                <input asp-for="CapacidadPasajeros" class="form-control" />
-                <span asp-validation-for="CapacidadPasajeros" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CilindrajeMotor" class="control-label"></label>
-                <input asp-for="CilindrajeMotor" class="form-control" />
-                <span asp-validation-for="CilindrajeMotor" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PaisOrigen" class="control-label"></label>
-                <input asp-for="PaisOrigen" class="form-control" />
-                <span asp-validation-for="PaisOrigen" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DescripcionGeneral" class="control-label"></label>
-                <input asp-for="DescripcionGeneral" class="form-control" />
-                <span asp-validation-for="DescripcionGeneral" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="OtrasCaracteristicas" class="control-label"></label>
-                <input asp-for="OtrasCaracteristicas" class="form-control" />
-                <span asp-validation-for="OtrasCaracteristicas" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="IdDuenoVehiculo" class="control-label"></label>
-                <select asp-for="IdDuenoVehiculo" class ="form-control" asp-items="ViewBag.IdDuenoVehiculo"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="IdConductor" class="control-label"></label>
-                <select asp-for="IdConductor" class ="form-control" asp-items="ViewBag.IdConductor"></select>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <form asp-action="Create" class="row mt-6 g-3 needs-validation" novalidate>
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group col-3">
+            <label asp-for="Placa" class="control-label"></label>
+            <input asp-for="Placa" class="form-control" placeholder="Placa Vehiculo" pattern="[0-9 A-Z]*" minlenght="6" maxlength="6"  required="" />
+            <div class="valid-feedback">Todo bien</div>
+            <div class="invalid-feedback">Es necesario llenar este espacio. Recuerda que la placa se compone de 3 letras y 3 numeros. Ej: ABC123 </div> 
+            @*<span asp-validation-for="Placa" class="text-danger"></span>*@
+        </div>
+        <div class="form-group col-3">
+            <label asp-for="Tipo" class="control-label"></label>
+            <input asp-for="Tipo" class="form-control" placeholder="Tipo de Vehoculo" pattern="[a-z A-Z]*" required="" />
+            <div class="valid-feedback">Todo bien</div>
+            <div class="invalid-feedback">Es necesario llenar este espacio</div>
+            @*<span asp-validation-for="Tipo" class="text-danger"></span>*@
+        </div>
+        <div class="form-group col-3">
+            <label asp-for="Marca" class="control-label"></label>
+            <input asp-for="Marca" class="form-control" placeholder="Marca del Vehiculo" pattern="[a-z A-Z]*" required="" />
+            <div class="valid-feedback">Todo bien</div>
+            <div class="invalid-feedback">Es necesario llenar este espacio</div>
+            @*<span asp-validation-for="Marca" class="text-danger"></span>*@
+        </div>
+        <div class="form-group col-3">
+            <label asp-for="Modelo" class="control-label"></label>
+            <input asp-for="Modelo" class="form-control" placeholder="Modelo del Vehiculo" pattern="[0-9]*" minlength="4" maxlength="4" required="" />
+            <div class="valid-feedback">Todo bien</div>
+            <div class="invalid-feedback">Es necesario llenar este espacio. El modelo del vehiculo debe ser el año del modelo</div>
+            @*<span asp-validation-for="Modelo" class="text-danger"></span>*@
+        </div>
+        <div class="form-group col-3">
+            <label asp-for="CapacidadPasajeros" class="control-label"></label>
+            <input type="number" asp-for="CapacidadPasajeros" class="form-control" placeholder="Capacidad de pasajeros" min="1" max="10" required="" />
+            <div class="valid-feedback">Todo bien</div>
+            <div class="invalid-feedback">Es necesario llenar este espacio</div>
+            @*<span asp-validation-for="CapacidadPasajeros" class="text-danger"></span>*@
+        </div>
+        <div class="form-group col-3">
+            <label asp-for="CilindrajeMotor" class="control-label"></label>
+            <input asp-for="CilindrajeMotor" class="form-control" placeholder="Cilindraje del Motor" pattern="[0-9]*" minlength="4" maxlength="4" required="" />
+            <div class="valid-feedback">Todo bien</div>
+            <div class="invalid-feedback">Es necesario llenar este espacio</div>
+            @*<span asp-validation-for="CilindrajeMotor" class="text-danger"></span>*@
+        </div>
+        <div class="form-group col-3">
+            <label asp-for="PaisOrigen" class="control-label"></label>
+            <input asp-for="PaisOrigen" class="form-control" placeholder="Pais de Origen" pattern="[a-z A-Z]*" required="" />
+            <div class="valid-feedback">Todo bien</div>
+            <div class="invalid-feedback">Es necesario llenar este espacio</div>
+            @*<span asp-validation-for="PaisOrigen" class="text-danger"></span>*@
+        </div>
+        <div class="form-group col-6">
+            <label asp-for="DescripcionGeneral" class="control-label"></label>
+            <textarea asp-for="DescripcionGeneral" class="form-control" placeholder="Descripcion Vehiculo" required=""></textarea>
+            <div class="valid-feedback">Todo bien</div>
+            <div class="invalid-feedback">Es necesario llenar este espacio</div>
+            @*<span asp-validation-for="DescripcionGeneral" class="text-danger"></span>*@
+        </div>
+        <div class="form-group col-6">
+            <label asp-for="OtrasCaracteristicas" class="control-label"></label>
+            <textarea asp-for="OtrasCaracteristicas" class="form-control" placeholder="Observaciones Vehiculo" required=""></textarea>
+            <div class="valid-feedback">Todo bien</div>
+            <div class="invalid-feedback">Es necesario llenar este espacio</div>
+            @*<span asp-validation-for="OtrasCaracteristicas" class="text-danger"></span>*@
+        </div>
+        <div class="form-group col-6">
+            <label asp-for="IdDuenoVehiculo" class="control-label"></label>
+            <select asp-for="IdDuenoVehiculo" class ="form-control" asp-items="ViewBag.IdDuenoVehiculo"></select>
+        </div>
+        <div class="form-group col-6">
+            <label asp-for="IdConductor" class="control-label"></label>
+            <select asp-for="IdConductor" class ="form-control" asp-items="ViewBag.IdConductor"></select>
+        </div>
+        
+            <input type="submit" value="Create" class="btn btn-success" />
+        
+    </form>
 </div>
+
+
+<a asp-action="Index" class="fw-bold">
+    VOLVER A LA LISTA
+    <i class="bi bi-chevron-double-left"></i>
+</a>
+
+<script src="~/js/scriptFormu.js" asp-append-version="true"></script>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

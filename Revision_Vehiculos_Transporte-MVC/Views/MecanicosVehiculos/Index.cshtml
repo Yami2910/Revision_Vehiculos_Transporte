@@ -4,38 +4,61 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<head>
+    <link rel="stylesheet" href="~/css/styleTablas.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<h1>Orden de trabajo</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-outline-dark">
+        ASIGNAR MECANICO A VEHICULO  
+        <i class="bi bi-plus-circle-fill"></i>
+    </a>
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.IdMecanicoNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdVehiculoNavigation)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdMecanicoNavigation.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdVehiculoNavigation.Id)
-            </td>
-            <td>
-                <a asp-action="Edit" class="btn btn-warning" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" class="btn btn-primary" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <table class="table table-responsive table-striped table-hover table-bordered border-dark">
+                <thead>
+                    <tr>
+                        <th>
+                            @*@Html.DisplayNameFor(model => model.IdMecanicoNavigation)*@
+                            MECANICO
+                        </th>
+                        <th>
+                            @*@Html.DisplayNameFor(model => model.IdVehiculoNavigation)*@
+                            VEHICULO
+                        </th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+            @foreach (var item in Model) {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.IdMecanicoNavigation.Nombre)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.IdVehiculoNavigation.Placa)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" class="btn btn-warning text-dark fw-bold bg-warning" asp-route-id="@item.Id">Editar</a>
+                        </td>
+                        <td>
+                            <a asp-action="Details" class="btn btn-primary text-dark fw-bold bg-primary" asp-route-id="@item.Id">Detalles</a>
+                        </td>
+                        <td>
+                            <a asp-action="Delete" class="btn btn-danger text-dark fw-bold bg-danger" asp-route-id="@item.Id">Eliminar</a>
+                        </td>
+                    </tr>
+            }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

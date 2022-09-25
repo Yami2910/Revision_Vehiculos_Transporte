@@ -4,51 +4,75 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<head>
+    <link rel="stylesheet" href="~/css/styleTablaVehiculo - Copia.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<h1>Registro de Vehiculos</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-outline-dark">
+        AGREGAR NUEVO VEHICULO 
+        <i class="bi bi-plus-circle-fill"></i>
+    </a>
 </p>
-<table class="table">
+
+
+
+<table class="table table-responsive table-striped table-hover table-bordered border-dark">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Placa)
+                @*@Html.DisplayNameFor(model => model.Placa)*@
+                PLACA
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Tipo)
+                @*@Html.DisplayNameFor(model => model.Tipo)*@
+                TIPO
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Marca)
+                @*@Html.DisplayNameFor(model => model.Marca)*@
+                MARCA
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Modelo)
+                @*@Html.DisplayNameFor(model => model.Modelo)*@
+                MODELO
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CapacidadPasajeros)
+                @*@Html.DisplayNameFor(model => model.CapacidadPasajeros)*@
+                CAPACIDAD PASAJEROS
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CilindrajeMotor)
+                @*@Html.DisplayNameFor(model => model.CilindrajeMotor)*@
+                CILINDRAJE MOTOR
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.PaisOrigen)
+                @*@Html.DisplayNameFor(model => model.PaisOrigen)*@
+                PAIS DE ORIGEN
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.DescripcionGeneral)
+                @*@Html.DisplayNameFor(model => model.DescripcionGeneral)*@
+                DESCRIPCION GENERAL
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.OtrasCaracteristicas)
+                @*@Html.DisplayNameFor(model => model.OtrasCaracteristicas)*@
+                OBSERVACIONES
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdConductorNavigation)
+                @*@Html.DisplayNameFor(model => model.IdConductorNavigation)*@
+                CONDUCTOR
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdDuenoVehiculoNavigation)
+                @*@Html.DisplayNameFor(model => model.IdDuenoVehiculoNavigation)*@
+                DUEÑO DEL VEHICULO
             </th>
+            <th></th>
+            <th></th>
             <th></th>
         </tr>
     </thead>
-    <tbody>
+    <tbody class="table-group-divider">
 @foreach (var item in Model) {
         <tr>
             <td>
@@ -85,9 +109,13 @@
                 @Html.DisplayFor(modelItem => item.IdDuenoVehiculoNavigation.Nombre)
             </td>
             <td>
-                <a asp-action="Edit" class="btn btn-warning" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" class="btn btn-primary" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" class="btn btn-warning text-dark fw-bold bg-warning" asp-route-id="@item.Id">Editar</a>
+            </td>
+            <td>
+                <a asp-action="Details" class="btn btn-primary text-dark fw-bold bg-primary" asp-route-id="@item.Id">Detalles</a>
+            </td>
+            <td>
+                <a asp-action="Delete" class="btn btn-danger text-dark fw-bold bg-danger" asp-route-id="@item.Id">Eliminar</a>
             </td>
         </tr>
 }

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Revision_Vehiculos_Transporte_MVC.Models;
@@ -60,7 +56,7 @@ namespace Revision_Vehiculos_Transporte_MVC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,IdMecanico,IdVehiculo")] MecanicoVehiculo mecanicoVehiculo)
         {
-            if (mecanicoVehiculo!=null)
+            if (mecanicoVehiculo != null)
             {
                 _context.Add(mecanicoVehiculo);
                 await _context.SaveChangesAsync();
@@ -101,7 +97,7 @@ namespace Revision_Vehiculos_Transporte_MVC.Controllers
                 return NotFound();
             }
 
-            if (mecanicoVehiculo!=null)
+            if (mecanicoVehiculo != null)
             {
                 try
                 {
@@ -160,14 +156,14 @@ namespace Revision_Vehiculos_Transporte_MVC.Controllers
             {
                 _context.MecanicoVehiculos.Remove(mecanicoVehiculo);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool MecanicoVehiculoExists(int id)
         {
-          return _context.MecanicoVehiculos.Any(e => e.Id == id);
+            return _context.MecanicoVehiculos.Any(e => e.Id == id);
         }
     }
 }

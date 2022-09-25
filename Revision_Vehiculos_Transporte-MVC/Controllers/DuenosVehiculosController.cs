@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Revision_Vehiculos_Transporte_MVC.Models;
 
@@ -21,7 +16,7 @@ namespace Revision_Vehiculos_Transporte_MVC.Controllers
         // GET: DuenosVehiculos
         public async Task<IActionResult> Index()
         {
-              return View(await _context.DuenoVehiculos.ToListAsync());
+            return View(await _context.DuenoVehiculos.ToListAsync());
         }
 
         // GET: DuenosVehiculos/Details/5
@@ -147,14 +142,14 @@ namespace Revision_Vehiculos_Transporte_MVC.Controllers
             {
                 _context.DuenoVehiculos.Remove(duenoVehiculo);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool DuenoVehiculoExists(int id)
         {
-          return _context.DuenoVehiculos.Any(e => e.Id == id);
+            return _context.DuenoVehiculos.Any(e => e.Id == id);
         }
     }
 }

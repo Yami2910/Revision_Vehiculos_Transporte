@@ -4,64 +4,86 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="~/css/styleFormu.css" asp-append-version="true" />
+</head>
 
-<h4>DuenoVehiculo</h4>
+<h1>AGREGAR NUEVO DUEÑO DE VEHICULO</h1>
+
 <hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Nombre" class="control-label"></label>
-                <input asp-for="Nombre" class="form-control" />
-                <span asp-validation-for="Nombre" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Apellido" class="control-label"></label>
-                <input asp-for="Apellido" class="form-control" />
-                <span asp-validation-for="Apellido" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Direccion" class="control-label"></label>
-                <input asp-for="Direccion" class="form-control" />
-                <span asp-validation-for="Direccion" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="NumeroTelefono" class="control-label"></label>
-                <input asp-for="NumeroTelefono" class="form-control" />
-                <span asp-validation-for="NumeroTelefono" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FechaNacimiento" class="control-label"></label>
-                <input type="date" asp-for="FechaNacimiento" class="form-control" />
-                <span asp-validation-for="FechaNacimiento" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CiudadResidencia" class="control-label"></label>
-                <input asp-for="CiudadResidencia" class="form-control" />
-                <span asp-validation-for="CiudadResidencia" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="NumeroDocumento" class="control-label"></label>
-                <input asp-for="NumeroDocumento" class="form-control" />
-                <span asp-validation-for="NumeroDocumento" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <form asp-action="Create"class="row mt-6 g-3 needs-validation" novalidate>
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group col-3">
+            <label asp-for="Nombre" class="control-label"></label>
+            <input asp-for="Nombre" class="form-control" placeholder="Nombre Dueño" pattern="[a-z A-Z]*" required="" />
+            <div class="valid-feedback">Todo bien</div>
+            <div class="invalid-feedback">Es necesario llenar este espacio</div>
+            @*<span asp-validation-for="Nombre" class="text-danger"></span>*@
+        </div>
+        <div class="form-group col-3">
+            <label asp-for="Apellido" class="control-label"></label>
+            <input asp-for="Apellido" class="form-control" placeholder="Apellido Dueño" pattern="[a-z A-Z]*" required="" />
+            <div class="valid-feedback">Todo bien</div>
+            <div class="invalid-feedback">Es necesario llenar este espacio</div>
+            @*<span asp-validation-for="Apellido" class="text-danger"></span>*@
+        </div>
+        <div class="form-group col-3">
+            <label asp-for="Direccion" class="control-label"></label>
+            <input asp-for="Direccion" class="form-control" placeholder="Direccion Dueño" required="" />
+            <div class="valid-feedback">Todo bien</div>
+            <div class="invalid-feedback">Es necesario llenar este espacio</div>
+            @*<span asp-validation-for="Direccion" class="text-danger"></span>*@
+        </div>
+        <div class="form-group col-3">
+            <label asp-for="Email" class="control-label"></label>
+            <input type="email" asp-for="Email" class="form-control" placeholder="Email Dueño" required="" />
+            <div class="valid-feedback">Todo bien</div>
+            <div class="invalid-feedback">Es necesario llenar este espacio. El email debe llevar @@</div>
+            @*<span asp-validation-for="Email" class="text-danger"></span>*@
+        </div>
+        <div class="form-group col-3">
+            <label asp-for="NumeroTelefono" class="control-label"></label>
+            <input asp-for="NumeroTelefono" class="form-control" placeholder="Telefono Dueño" pattern="[0-9]*" maxlength="10" required="" />
+            <div class="valid-feedback">Todo bien</div>
+            <div class="invalid-feedback">Es necesario llenar este espacio. Ingresa un numero telefonico valido</div>
+            @*<span asp-validation-for="NumeroTelefono" class="text-danger"></span>*@
+        </div>
+        <div class="form-group col-3">
+            <label asp-for="FechaNacimiento" class="control-label"></label>
+            <input type="date" asp-for="FechaNacimiento" class="form-control" required="" />
+            <div class="valid-feedback">Todo bien</div>
+            <div class="invalid-feedback">Es necesario llenar este espacio</div>
+            @*<span asp-validation-for="FechaNacimiento" class="text-danger"></span>*@
+        </div>
+        <div class="form-group col-3">
+            <label asp-for="CiudadResidencia" class="control-label"></label>
+            <input asp-for="CiudadResidencia" class="form-control" placeholder="Ciudad de Residencia" pattern="[a-z A-Z]*" required="" />
+            <div class="valid-feedback">Todo bien</div>
+            <div class="invalid-feedback">Es necesario llenar este espacio</div>
+            @*<span asp-validation-for="CiudadResidencia" class="text-danger"></span>*@
+        </div>
+        <div class="form-group col-3">
+            <label asp-for="NumeroDocumento" class="control-label"></label>
+            <input asp-for="NumeroDocumento" class="form-control" placeholder="Documento Dueño" pattern="[0-9]*" required="" maxlength="20" />
+            <div class="valid-feedback">Todo bien</div>
+            <div class="invalid-feedback">Es necesario llenar este espacio. Ingresa un numero de documento valido</div>
+            @*<span asp-validation-for="NumeroDocumento" class="text-danger"></span>*@
+        </div>
+
+            <input type="submit" value="Create" class="btn btn-success" />
+    </form>
 </div>
+
+
+<a asp-action="Index" class="fw-bold">
+    VOLVER A LA LISTA
+    <i class="bi bi-chevron-double-left"></i>
+</a>
+
+<script src="~/js/scriptFormu.js" asp-append-version="true"></script>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

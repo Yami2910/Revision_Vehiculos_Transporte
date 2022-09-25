@@ -1,0 +1,43 @@
+input:invalid {
+    border-color: red;
+}
+
+input,
+input:valid {
+    border-color: green
+}
+
+textarea:invalid {
+    border-color: red;
+}
+
+input,
+textarea:valid {
+    border-color: green
+}
+
+div .col-3 {
+    padding-bottom: 25px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+div .col-6 {
+    padding-bottom: 25px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.container {
+    margin: auto;
+}
+
+.container .btn{
+    margin:auto;
+    width: auto;
+    height: auto;
+}
+
+a{
+    font-size: 20px;
+}

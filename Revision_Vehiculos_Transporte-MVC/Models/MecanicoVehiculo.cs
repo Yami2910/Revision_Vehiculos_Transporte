@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Revision_Vehiculos_Transporte_MVC.Models
+﻿namespace Revision_Vehiculos_Transporte_MVC.Models
 {
     public partial class MecanicoVehiculo
     {

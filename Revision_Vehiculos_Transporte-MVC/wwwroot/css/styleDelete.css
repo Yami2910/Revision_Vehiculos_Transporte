@@ -1,0 +1,20 @@
+
+
+body {
+    background: #ffffff;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.row {
+    background: #ffffff;
+}
+
+.h1 {
+    font-size: 45px;
+}

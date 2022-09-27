@@ -8,137 +8,137 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Revision_Vehiculos_Transporte_MVC
 build_property.RootNamespace = Revision_Vehiculos_Transporte_MVC
-build_property.ProjectDir = C:\Users\JUAN PABLO URIBE\source\repos\Revision_Vehiculos_Transporte-MVC\Revision_Vehiculos_Transporte-MVC\
+build_property.ProjectDir = C:\Users\tatia\source\repos\Revision_Vehiculos_Transporte\Revision_Vehiculos_Transporte-MVC\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\JUAN PABLO URIBE\source\repos\Revision_Vehiculos_Transporte-MVC\Revision_Vehiculos_Transporte-MVC
+build_property.MSBuildProjectDirectory = C:\Users\tatia\source\repos\Revision_Vehiculos_Transporte\Revision_Vehiculos_Transporte-MVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/Conductores/Create.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/Conductores/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZHVjdG9yZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/Conductores/Delete.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/Conductores/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZHVjdG9yZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/Conductores/Details.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/Conductores/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZHVjdG9yZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/Conductores/Edit.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/Conductores/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZHVjdG9yZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/Conductores/Index.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/Conductores/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZHVjdG9yZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/DuenosVehiculos/Create.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/DuenosVehiculos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHVlbm9zVmVoaWN1bG9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/DuenosVehiculos/Delete.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/DuenosVehiculos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHVlbm9zVmVoaWN1bG9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/DuenosVehiculos/Details.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/DuenosVehiculos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHVlbm9zVmVoaWN1bG9zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/DuenosVehiculos/Edit.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/DuenosVehiculos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHVlbm9zVmVoaWN1bG9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/DuenosVehiculos/Index.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/DuenosVehiculos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHVlbm9zVmVoaWN1bG9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/Home/Index.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/Home/Privacy.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/MecanicosVehiculos/Create.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/MecanicosVehiculos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVjYW5pY29zVmVoaWN1bG9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/MecanicosVehiculos/Delete.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/MecanicosVehiculos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVjYW5pY29zVmVoaWN1bG9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/MecanicosVehiculos/Details.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/MecanicosVehiculos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVjYW5pY29zVmVoaWN1bG9zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/MecanicosVehiculos/Edit.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/MecanicosVehiculos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVjYW5pY29zVmVoaWN1bG9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/MecanicosVehiculos/Index.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/MecanicosVehiculos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVjYW5pY29zVmVoaWN1bG9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/Mecanicos/Create.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/Mecanicos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVjYW5pY29zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/Mecanicos/Delete.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/Mecanicos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVjYW5pY29zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/Mecanicos/Details.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/Mecanicos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVjYW5pY29zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/Mecanicos/Edit.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/Mecanicos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVjYW5pY29zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/Mecanicos/Index.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/Mecanicos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVjYW5pY29zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/Shared/Error.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/Vehiculos/Create.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/Vehiculos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWN1bG9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/Vehiculos/Delete.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/Vehiculos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWN1bG9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/Vehiculos/Details.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/Vehiculos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWN1bG9zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/Vehiculos/Edit.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/Vehiculos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWN1bG9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/Vehiculos/Index.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/Vehiculos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWN1bG9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/_ViewImports.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/_ViewStart.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JUAN PABLO URIBE/source/repos/Revision_Vehiculos_Transporte-MVC/Revision_Vehiculos_Transporte-MVC/Views/Shared/_Layout.cshtml]
+[C:/Users/tatia/source/repos/Revision_Vehiculos_Transporte/Revision_Vehiculos_Transporte-MVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-74o831b85q
